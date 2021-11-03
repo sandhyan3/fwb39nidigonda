@@ -2,25 +2,25 @@ extends layout
 
 block content
   h1= title
-  p Welcome to the Balls pug
+  p Welcome to the balls pug
    div(class="container-fluid")
         div(class="row")
             -
                 let balls = [
                     {
-                        "Itemname": "Cricket ball",
-                        "Quantity": 3,
+                        "Itemname": "cricket ball",
+                        "Quantity": 1,
+                        "price": 11
+                    },
+                    {
+                        "Itemname": "tennis ball",
+                        "Quantity": 2,
                         "price": 12
                     },
                     {
-                        "Itemname": "Tennis ball",
-                        "Quantity": 4,
-                        "price": 15
-                    },
-                    {
-                        "Itemname": "Basket ball",
-                        "Quantity": 2,
-                        "price": 10
+                        "Itemname": "volley ball",
+                        "Quantity": 3,
+                        "price": 13
                     },                   
                 ]
             each v,index in balls
@@ -36,5 +36,5 @@ block content
   script.                
         function buy(intemNo)
         {
-              alert(`Your ball is ${intemNo + 1}`)
+              alert(`Your balls is ${intemNo + 1}`)
         }
